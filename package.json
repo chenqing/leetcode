@@ -1,0 +1,48 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "an leetcode solution by typescript",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.1",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenqing/leetcode.git"
+  },
+  "jest": {
+    "rootDir": "src",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "__test__.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "keywords": [
+    "leetcode",
+    "typescript",
+    "ts"
+  ],
+  "author": "chenqing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenqing/leetcode/issues"
+  },
+  "homepage": "https://github.com/chenqing/leetcode#readme"
+}
