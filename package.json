@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "an leetcode solution by typescript",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "clone-deep": "^4.0.1"
+  },
   "devDependencies": {
-    "@types/jest": "^24.0.19",
+    "@types/jest": "^24.0.23",
     "@types/node": "^12.11.1",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
