@@ -52,16 +52,27 @@ class SingleLinkedList<T> implements SingleLinkedList<T> {
     return true;
   }
 
-  // insert after 
+  // insert before index 
   insert(index, data) {
-    if (index >= this.length) {
+    if(index < 0) {
+      throw new Error(`index must great than zero`);
+    }
+
+    if (index > this.length) {
       this.append(data);
     } else {
       const node = new LinkNode(data);
-      let current = this.get(index);
-      let next = current.next;
-      current.next = node;
-      current.next.next = next;
+
+      if(index === 0) {
+        node.next = this.head;
+        this.head = node;
+      } else {
+        let pre = this.get(index - 1);
+        let current = pre.next;
+        pre.next = node;
+        node.next = current;
+      }
+
     }
 
     this.length++;
